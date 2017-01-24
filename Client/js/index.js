@@ -10,10 +10,11 @@ var send = function() {
 		b: 'b',
 		c: 'c',
 		d: 1,
-		e: 2.2
+		e: 2.2,
+		f: {fa:1,fb:3}
 	};
 	var form = document.createElement('form');
-	form.action = 'http://127.0.0.1:1337';
+	form.action = 'http://127.0.0.1:20001';
 	form.method = 'post';
 	createForm(form, data);
 	document.getElementById('myForm').append(form);
